@@ -1,0 +1,17 @@
+<table class="table table-light">
+    <tbody>
+        <tr>
+            <td>fname</td>
+            <td>lname</td>
+            <td>email</td>
+        </tr>
+    </tbody>
+    <tr *ngFor="let datas of data">
+            <td>{{datas.firstName}}</td>
+            <td>{{datas.lastName}}</td>
+            <td>{{datas.email}}</td>
+    </tr>
+</table>
+<div class="form-group">
+        <button class="btn btn-danger" (click)="deleteUser(data)">delete</button>
+    </div>
